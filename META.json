@@ -1,7 +1,7 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Very simple Menu For Console commands Platform Agnostic",
    "author" : [
-      "michaelm <michael@muellers.net.au>"
+      "Michael Mueller <michael@muellers.net.au>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v3.1.1, CPAN::Meta::Converter version 2.150010",
@@ -42,7 +42,10 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008001"
+            "File::HomeDir" : "0",
+            "Term::ANSIScreen" : "0",
+            "YAML::Tiny" : "0",
+            "perl" : "v5.10.0"
          }
       },
       "test" : {
@@ -52,7 +55,18 @@
       }
    },
    "release_status" : "unstable",
-   "version" : "0.01",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/code4pay/App-ConMenu/issues"
+      },
+      "homepage" : "https://github.com/code4pay/App-ConMenu",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/code4pay/App-ConMenu.git",
+         "web" : "https://github.com/code4pay/App-ConMenu"
+      }
+   },
+   "version" : "1.00",
    "x_serialization_backend" : "JSON::PP version 2.94",
    "x_static_install" : 1
 }
